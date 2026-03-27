@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -223,9 +222,6 @@ class _PokemonCardState extends ConsumerState<_PokemonCard> {
   @override
   Widget build(BuildContext context) {
     final item = widget.item;
-    if (kDebugMode) {
-      print("${item.id} : ${item.name}");
-    }
     return Container(
       decoration: BoxDecoration(
         color: ColorPalette.surfaceLight,
